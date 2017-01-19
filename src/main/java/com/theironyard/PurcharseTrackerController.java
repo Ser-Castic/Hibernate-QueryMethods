@@ -31,15 +31,16 @@ public class PurcharseTrackerController {
     public void init() throws IOException {
         if (customers.count() == 0 && purchases.count() == 0) {
             String csvCustomersFile = "customers.csv";
-            String csvPurchasesFile = "customers.csv";
-            BufferedReader brCustomers = null;
-            BufferedReader brPurchases = null;
-            String line = " ";
+            String csvPurchasesFile = "purchases.csv";
+            BufferedReader brCustomers;
+            BufferedReader brPurchases;
+            String lineCustomers;
+            String linePurchases;
             String cvsSplitBy = ",";
 
             brCustomers = new BufferedReader(new FileReader(csvCustomersFile));
-            while ((line = brCustomers.readLine()) != null) {
-                String[] customers = line.split(cvsSplitBy);
+            while ((lineCustomers = brCustomers.readLine()) != null) {
+                String[] customers = lineCustomers.split(cvsSplitBy);
                 Customer customerObject = new Customer();
                 customerObject.setName(customers[0]);
                 customerObject.setEmail(customers[1]);
@@ -48,8 +49,8 @@ public class PurcharseTrackerController {
             }
 
             brPurchases = new BufferedReader(new FileReader(csvPurchasesFile));
-            while ((line = brPurchases.readLine()) != null) {
-                String[] purchases = line.split(cvsSplitBy);
+            while ((linePurchases = brPurchases.readLine()) != null) {
+                String[] purchases = linePurchases.split(cvsSplitBy);
                 Purchase purchaseObject = new Purchase();
                 purchaseObject.setDate(purchases[1]);
                 purchaseObject.setCreditCard(purchases[2]);
