@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+{{#customers}}
+<ol>
+    {{#purchases}}
+    <li>{{name}} {{email}} {{category}} {{creditCard}} {{cvv}} {{date}} </li>
+    {{/purchases}}
+</ol>
+{{/customers}}
+</body>
+</html>
