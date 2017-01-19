@@ -38,24 +38,7 @@
       <property name="caretWidth" class="java.lang.Integer" />
     </properties>
   </component>
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/../Game" value="2967256320000" />
-        <entry key="$PROJECT_DIR$/../GameTrackerSpring" value="1484770704000" />
-        <entry key="$PROJECT_DIR$/../HelloSpring" value="1484683640000" />
-        <entry key="$PROJECT_DIR$" value="1484869990000" />
-        <entry key="$PROJECT_DIR$/../KoalioGame" value="2967263326000" />
-        <entry key="$PROJECT_DIR$/../Minicraft" value="2967507124000" />
-        <entry key="$PROJECT_DIR$/../java-koans-master/koans" value="1468032122000" />
-        <entry key="$PROJECT_DIR$/../libgdx" value="2968168804000" />
-      </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" default="true">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="masterDetails">
